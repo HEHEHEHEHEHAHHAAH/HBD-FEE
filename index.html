@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <style>
+    .intro {
+      position: fixed;
+      inset: 0;
+      background-color: #fff6f9;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ff4081;
+      animation: fadeOut 3s ease-in-out forwards;
+    }
+    @keyframes fadeOut {
+      0% { opacity: 1; }
+      90% { opacity: 0; }
+      100% { opacity: 0; display: none; visibility: hidden; }
+    }
+  </style>
+</head>
+<body>
+  <div class="intro">🎈 Welcome to the Birthday Page! 🎈</div>
+  <div class="container">
+    <h1>🎉 Happy Birthday! 🎉</h1>
+    <video src="video.mp4" autoplay muted loop playsinline class="birthday-video"></video>
+
+    <div class="message">
+      <p>
+        WOI FEE,
+        <br/><br/>
+        Semoga tahun ini bawa banyak hal positif buat hidup lu, mulai dari kesehatan, kebahagiaan, sampai segala pencapaian yang lu impikan. Semoga tiap langkah yang lu ambil selalu ngarah ke hal-hal yang lebih baik, dan tentunya, nggak lupa juga buat menikmati hidup yang udah lu capai sejauh ini.
+
+Nggak kerasa ya, udah nambah umur lagi, tapi gue yakin setiap tahunnya lu selalu dapetin pelajaran baru yang bikin lu lebih dewasa dan lebih keren. Jadi, selamat menjalani tahun baru hidup lu yang penuh dengan kesempatan baru!
+
+Oh iya, congrats banget ya buat lu yang udah keterima di Farmasi Unpad! 🎓 Itu pencapaian yang luar biasa dan gue tahu itu nggak gampang. Lu udah ngebuktiin kalau usaha keras lu nggak sia-sia. Semoga kuliah lu lancar, ilmu yang didapat berguna banget, dan yang paling penting, semoga lu selalu bisa jaga keseimbangan antara kuliah dan waktu buat santai. Jangan terlalu dibawa stres, karena hidup ini juga butuh waktu buat relax.
+
+Tahun ini gue yakin bakal penuh dengan hal baru, pengalaman seru, dan tentunya banyak kenangan yang nggak akan lu lupakan. Walaupun nanti mungkin jadwal kuliah padat dan tugas menumpuk, gue yakin lu bakal bisa ngatasin semua itu dengan baik. Dan pastinya, semoga ada waktu juga buat ngumpul, ketawa bareng, dan nambahin kenangan seru lainnya!
+u.
+        <br/><br/>
+        Pokoknya, selamat ulang tahun lagi, Fee! Semoga semua yang terbaik buat lu, dan terus jadi orang yang positif, seru, dan nggak pernah lupa buat ngebahagiain diri sendiri dan orang-orang di sekitar lu. Gue selalu dukung lu, dan semoga tahun ini lu makin sukses dan bahagia. 🎂🎉"
+      </p>
+    </div>
+
+    <button class="confetti-btn" onclick="confettiEffect(); playMusic();">PENCET AJA 💌</button>
+  </div>
+
+  <!-- Embedded YouTube player -->
+  <iframe id="yt-player" width="0" height="0" style="display:none" 
+    src="https://www.youtube.com/embed/IGqTw72o5wI?enablejsapi=1&version=3&playerapiid=ytplayer&origin=http://example.com"
+    frameborder="0" allow="autoplay"></iframe>
+
+  <script src="script.js"></script>
+</body>
+</html>
